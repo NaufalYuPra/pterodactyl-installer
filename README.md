@@ -1,3 +1,27 @@
+# Pterodactyl Installer (Private Fork)
+
+This is a private fork of the Pterodactyl Installer script, modified to install Pterodactyl Panel and Wings from private repositories. It is based on the original project by Vilhelm Prytz but customized for private GitHub repos.
+
+**Note:** This script is not associated with the official Pterodactyl Project[](https://pterodactyl.io). It installs a forked version from private repos.
+
+## Requirements
+- Root access on a supported OS:
+  - Ubuntu 20.04/22.04/24.04
+  - Debian 10/11/12/13
+  - Rocky Linux 8/9
+  - AlmaLinux 8/9
+- x86_64 architecture (arm64 supported but may have issues)
+- Internet access (for downloading dependencies and private repo files)
+
+## Installation
+
+### Using curl (Recommended for one-liner install)
+Because this repo is private, you need to include the GitHub Personal Access Token (PAT) in the Authorization header. Replace `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` with your actual PAT if different.
+
+Run as root:
+```bash
+bash <(curl -sSL -H "Authorization: token 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" https://raw.githubusercontent.com/NaufalYuPra/pterodactyl-installer/main/install.sh)
+
 # :bird: pterodactyl-installer
 
 ![Test Panel](https://github.com/pterodactyl-installer/pterodactyl-installer/actions/workflows/panel.yml/badge.svg)

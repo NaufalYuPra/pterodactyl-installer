@@ -21,6 +21,7 @@ Because this repo is private, you need to include the GitHub Personal Access Tok
 Run as root:
 ```bash
 bash <(curl -sSL -H "Authorization: token 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" https://raw.githubusercontent.com/NaufalYuPra/pterodactyl-installer/main/install.sh)
+```
 
 # :bird: pterodactyl-installer
 

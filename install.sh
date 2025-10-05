@@ -4,7 +4,7 @@ set -e
 
 export GITHUB_SOURCE="v1.2.0"
 export SCRIPT_RELEASE="v1.2.0"
-export GITHUB_BASE_URL="https://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@github.com/NaufalYuPra/pterodactyl-installer"
+export GITHUB_BASE_URL="https://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@github.com/NaufalYuPra/pterodactyl-installer"
 
 LOG_PATH="/var/log/pterodactyl-installer.log"
 
@@ -17,7 +17,7 @@ fi
 
 # Always remove lib.sh, before downloading it
 [ -f /tmp/lib.sh ] && rm -rf /tmp/lib.sh
-curl -sSL -H "Authorization: token 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" -o /tmp/lib.sh "$GITHUB_BASE_URL/raw/main/lib/lib.sh"
+curl -sSL -H "Authorization: token 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" -o /tmp/lib.sh "$GITHUB_BASE_URL/raw/main/lib/lib.sh"
 
 # shellcheck source=lib/lib.sh
 source /tmp/lib.sh
